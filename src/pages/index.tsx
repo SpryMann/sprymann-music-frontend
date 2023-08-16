@@ -1,6 +1,6 @@
 import { lazy } from 'react';
 import { Navigate, Outlet, Route, Routes } from 'react-router-dom';
-import { Sidebar } from 'widgets';
+import { Sidebar, Topbar } from 'widgets';
 
 const HomePage = lazy(() => import('./HomePage'));
 
@@ -8,7 +8,10 @@ function Layout() {
   return (
     <>
       <Sidebar />
-      <Outlet />
+      <main className="main">
+        <Topbar />
+        <Outlet />
+      </main>
     </>
   );
 }

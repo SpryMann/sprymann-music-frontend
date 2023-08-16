@@ -15,4 +15,27 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
   color: var(--color-black);
+  background: var(--color-gray-25);
+}
+
+#root {
+  display: flex;
+  align-items: flex-start;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+
+  @media (hover: hover) and (pointer: fine) {
+    cursor: pointer;
+  }
+}
+
+input {
+  font-family: 'Roboto', sans-serif;
+}
+
+.main {
+  width: 100%;
+  transition: padding 0.3s ease;
 }
